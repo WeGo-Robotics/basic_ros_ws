@@ -37,10 +37,10 @@ roscore
 ```
 7. 예제를 실행합니다.
 ```
-rosrun basic_ros pub.py
+rosrun basic_ros 01.pub.py
 ```
 ```
-rosrun basic_ros sub.py
+rosrun basic_ros 02.sub.py
 ```
 
 7. ```rostopic list```를 입력하여, 코드가 실행되어 있는지 확인합니다.
