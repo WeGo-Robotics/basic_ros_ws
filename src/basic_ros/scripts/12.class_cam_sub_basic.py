@@ -17,7 +17,7 @@ class Class_Name:  # 1단계: 클래스 이름 정의
 
         # ROS 서브스크라이버(Subscriber)를 설정합니다.
         # "/camera/rgb/image/raw/compressed" 토픽에서 CompressedImage 메시지를 구독하고, 콜백 함수(callback)를 호출합니다.
-        rospy.Subscriber("/camera/rgb/image/raw/compressed", CompressedImage, self.callback)  # ROS 2단계(필수): 서브스크라이버 설정
+        rospy.Subscriber("/camera/rgb/image_raw/compressed", CompressedImage, self.callback)  # ROS 2단계(필수): 서브스크라이버 설정
 
     def callback(self, msg):  # 3단계: 클래스 내의 콜백 함수 설정
         # 이미지 데이터를 처리하는 코드를 이 부분에 추가할 수 있습니다.
