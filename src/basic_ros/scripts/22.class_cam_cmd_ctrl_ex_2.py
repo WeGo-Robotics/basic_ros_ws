@@ -20,7 +20,7 @@ class Class_Name:  # 1단계: 클래스 이름 정의
 
         # ROS 서브스크라이버(Subscriber)를 설정합니다.
         # "/camera/rgb/image_raw/image_raw/compressed" 토픽에서 압축된 이미지를 구독하고, 콜백 함수(cam_CB)를 호출합니다.
-        rospy.Subscriber("/camera/rgb/image_raw/image_raw/compressed", CompressedImage, self.cam_CB)  # ROS 2단계: 노드 역할 - 서브스크라이버 설정
+        rospy.Subscriber("/camera/rgb/image_raw/compressed", CompressedImage, self.cam_CB)  # ROS 2단계: 노드 역할 - 서브스크라이버 설정
 
         # ROS 퍼블리셔(Publisher)를 설정합니다.
         # "/camera/gray/image_raw/compressed" 토픽에 압축된 이미지를 발행합니다.
