@@ -26,7 +26,7 @@ class Class_Name:  # 1단계: 클래스 이름 정의
         self.sub = rospy.Subscriber("/turtle1/pose", Pose, self.callback)  # ROS 2단계(필수): 서브스크라이버 설정
 
         # 메시지 발행 주기를 설정합니다. 이 예제에서는 10Hz로 설정합니다.
-        self.rate = rospy.Rate(10)  # ROS 2-1단계(옵션): 발행 주기 설정
+        self.rate = rospy.Rate(100)  # ROS 2-1단계(옵션): 발행 주기 설정
 
         # Twist 메시지 타입의 메시지 객체를 생성하고 초기화합니다.
         self.msg = Twist()  # 메시지 타입 설정 및 초기화
@@ -44,7 +44,7 @@ class Class_Name:  # 1단계: 클래스 이름 정의
 
         # 현재 메시지와 linear.x 값을 출력합니다.
         print(f"msg: {msg}")  # 출력: 메시지
-        print(f"msg.linear.x: {msg.linear.x}")  # 출력: 메시지(linear.x)
+        print(f"msg.x: {msg.x}")  # 출력: 메시지(linear.x)
 
         # 지정한 발행 주기에 따라 슬립합니다. 이것은 메시지를 일정한 주기로 발행하기 위해 사용됩니다.
         self.rate.sleep()  # ROS 3-1단계(옵션): 퍼블리셔 - 주기 실행
