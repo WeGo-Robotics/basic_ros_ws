@@ -26,7 +26,7 @@ class Class_Name:  # 1단계: 클래스 이름 정의
         print(f"msg.angle_max : {msg.angle_max}")  # 출력: 메시지 항목(angle_max)
         print(f"msg.angle_increment : {msg.angle_increment}")  # 출력: 메시지 항목(angle_increment)
         print(f"msg.range_min : {msg.range_min}")  # 출력: 메시지 항목(range_min)
-        print(f"msg.ranges_max : {msg.ranges_max}")  # 출력: 메시지 항목(ranges_max)
+        print(f"msg.range_max : {msg.range_max}")  # 출력: 메시지 항목(ranges_max)
         print(f"msg.ranges : {msg.ranges}")  # 출력: 메시지 항목(ranges)
 
 
